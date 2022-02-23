@@ -1,12 +1,68 @@
 .App {
-  text-align: center;
+ width: 100vw;
+ 
 }
+.card{
+  text-align: center;
+  flex: 1 1 15%;
+  padding: 25px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
 
+}
+.card2{
+  text-align: center;
+  flex: 1 1 25%;
+  padding: 25px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+
+}
+.card3{
+  text-align: center;
+  flex: 1 1 15%;
+  padding: 25px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+
+}
+.card3>h2{
+  color: blue;
+}
+.button{
+  border: 1px solid rgb(145, 145, 252);
+  padding: 10px;
+  border-radius: 5px;
+  color:rgb(145, 145, 252) ;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+@media only screen and (max-width:930px) {
+  .card3{
+    flex:1 1 30%;
+  }
+}
+@media only screen and (max-width:600px) {
+  .card{
+    flex:1 1 25%;
+  }
+  .card2{
+    flex: 1 1 50%;
+  }
+  .card3{
+    flex: 1 1 50%;
+  }
+}
+@media only screen and (max-width:400px) {
+  .card{
+    flex:1 1 30%;
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
